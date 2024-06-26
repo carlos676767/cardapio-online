@@ -149,7 +149,7 @@ line-height: normal;
 letter-spacing: 8px;
 }
 
-.description {
+.description  {
   display: flex;
   flex-wrap: wrap;
   font-size: 10px;
@@ -162,11 +162,30 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
-.pagina{
+.pagina, .icones{
   display: flex;
   flex-direction: column;
   justify-content: end;
   height: 100%;
 }
 
+
+.icones1{
+font-family: "Bebas Neue";
+font-size: 16px;
+font-style: normal;
+border-radius: 8px;
+background: var(--Secondary, #F3DFA0);
+padding:0;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+.preco{
+  color: var(--Brand, #20170E);
+font-family: "Bebas Neue";
+font-size: 15px;
+font-style: normal;
+letter-spacing: 1.2px;
+}
 }
