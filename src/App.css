@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+body {
+  display: none;
+  background-color: rgb(32, 23, 14);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@media(max-width: 768px) {
+  body {
+    display: block;
+    background-color: rgb(32, 23, 14);
+  }
+
+  .nameLogo {
+    color: var(--Secondary, #F3DFA0);
+    font-family: "Bebas Neue";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.2px;
+    width: auto;
+  }
+
+  .App-header {
+    display: flex;
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    color: var(--Secondary, #F3DFA0);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .burguer {
+    color: var(--Secondary, #F3DFA0);
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.6px;
+  }
+
+  .grid-item {
+    color: #000;
+    font-family: "Roboto",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 24px;
+    background: var(--Secondary, #F3DFA0);
+    
+    border: none;
+  }
+
+  .grid{
+    display: flex;
+width: 490px;
+padding: 0px 24px;
+flex-direction: column;
+align-items: flex-start;
+gap: 6px;
+  }
+  h3{
+    color: white;
+  }
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item {
+    display: flex;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.burguer{
+  width: 200px;
+align-self: stretch;
+}
+.farmer{
+  color: #EAEAEA;
+  font-family: "Bebas Neue";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 8px;
+}
+
+
+
+
+
+.grid-2x2 {
+  display: grid;
+  grid-template-columns: 2fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 10px;
+  margin-bottom: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.farmer {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+  color: #F3DFA0;
+font-family: "Bebas Neue";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 10px;
+  color: #666;
+  text-align: left;
+  margin-top: 0;
+  color: var(--Text, #EAEAEA);
+font-family: "Roboto Slab";
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.pagina{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: end;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
